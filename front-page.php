@@ -11,7 +11,7 @@
     }?>
 
     <div class="lista-productos my-5">
-        <h2 class='text-center'>PRODUCTOS</h2>
+        <h2 class='text-center'>Podcast</h2>
         <div class="row">
         <?php
         $args = array(
