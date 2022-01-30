@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="container my-4">
+<div class="container my-3">
 <div class="row">
 <div class="col-12 text-center">
     <h1><?php the_archive_title()?></h1>

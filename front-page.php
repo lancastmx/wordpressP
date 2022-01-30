@@ -10,25 +10,25 @@
         <?php    }
     }?>
 
-    <div class="lista-productos my-5">
+    <div class="podcast my-5">
         <h2 class='text-center'>Podcast</h2>
         <div class="row">
         <?php
         $args = array(
-            'post_type' => 'producto',
+            'post_type' => 'podcast',
             'post_per_page' => -1, 
             'order'         => 'ASC',
             'orderby'       => 'title'
         );
 
-        $productos = new WP_Query($args);
+        $podcast = new WP_Query($args);
 
-        if($productos->have_posts()){
-            while($productos->have_posts()){
-                $productos->the_post();
+        if($podcast->have_posts()){
+            while($podcast->have_posts()){
+                $podcast->the_post();
                 ?>
 
-                <div class="col-4">
+                <div class="col-3">
                     <figure>
                         <?php the_post_thumbnail('large'); ?>
                     </figure>
